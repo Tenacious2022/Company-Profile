@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column about-us">
+                <h3>About Us</h3>
+                <p>Ketelepele Solutions has been driving IT excellence since 2014. As part of the Motse Technologies Group, we specialize in delivering top-notch IT support and solutions. Our expert team is dedicated to turning your tech challenges into opportunities, ensuring seamless, reliable service that helps your business reach new heights.</p>
+            </div>
+            <div class="footer-column quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'industry' %}">Industries Served</a></li>
+                    <li><a href="{% url 'products' %}">Products</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-us">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: <a href="mailto:info@ketelopelesolutions.co.za">info@ketelopelesolutions.co.za</a></li>
+                    <li>REG: 2014/181903/08</li>
+                    <li>Phone: (058) 880-5010 or (012) 980-5074</li>
+                    <li><p><a href="https://www.google.com/maps/search/?api=1&query=01+Boundary+Road,+St+Andrews,+Jackal+Greek+Golf+Estate,+Roodepoort,+2169" target="_blank">
+                        01 Boundary Road, St Andrews, Jackal Greek Golf
+                        Estate, Roodepoort, 2169</a></p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ketelepele Solutions (Pty) Ltd</p>
+        </div>
+    </footer>
+</body>
+</html>

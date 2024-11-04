@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="{% static 'css/products.css' %}">
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        {% include 'navigation_bar.html' %}
+
+        <div class="header-content">
+            <h1>PRODUCTS</h1>
+        </div>
+    </header>
+   
+
+    <main>
+        <section class="product-list">
+            <div class="section-divider">
+                <p>Explore a range of our innovative products designed to enhance your business operations, from premium collection tools to advanced security and networking solutions.</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="{% static 'images/premium-bg.jpeg' %}" alt="Premium Tools Image">
+                    <h2>Insurance Premium Collection Tools</h2>
+                    <p>Applications and solutions including FS Pro, POS, eRoaster, and digitalization development.</p>
+                    <a href="{% url 'product_premium' %}">Learn More</a>
+                </div>
+                <div class="product-item">
+                    <img src="{% static 'images/ac-bg.jpeg' %}" alt="Air Conditioner Image">
+                    <h2>Air Conditioners Installations</h2>
+                    <p>Expert installation services for air conditioning systems.</p>
+                </div>
+                <div class="product-item">
+                    <img src="{% static 'images/wifi-bg.jpeg' %}" alt="Public Wi-Fi Image">
+                    <h2>Public WIFI Installations and Maintenance</h2>
+                    <p>Comprehensive public WIFI installation and ongoing maintenance services.</p>
+                </div>
+                <div class="product-item">
+                    <img src="{% static 'images/cctv-bg.jpeg' %}" alt="CCTV Image">
+                    <h2>SmartCam Security Solutions</h2>
+                    <p>Innovative camera systems equipped with smart analytics, delivering real-time alerts and detailed surveillance for critical areas.</p>
+                </div>
+                <div class="product-item">
+                    <img src="{% static 'images/ewater-bg.jpeg' %}" alt="E-water Metering Systems Image">
+                    <h2>E-water Metering Systems</h2>
+                    <p>Advanced solutions for monitoring and managing water usage efficiently.</p>
+                </div>              
+            </div>
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.clients-section {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.client-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns per row */
+    gap: 20px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.client-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+    width: 100%;
+    max-width: 250px; /* Ensures items don't get too wide */
+}
+
+.client-item:hover {
+    transform: scale(1.05);
+}
+
+.client-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.client-item p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 1.1em;
+}

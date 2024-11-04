@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used throughout */
+}
+
+/* Introduction Section */
+.header-content {
+  background: url('../images/PCT.jpeg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  height: 80%;
+  position: relative;
+  padding: 90px 0;
+}
+.header-content h1 {
+  font-size: 3rem; /* Larger size for main heading */
+  font-weight: bold; /* Keep bold for emphasis */
+  margin: 0;
+  padding: 20px;
+}
+
+.introduction {
+padding: 40px 20px;
+background-color: #ecf0f1;
+text-align: center;
+font-size: 1.5em; /* Larger font size */
+}
+/* Product Range Section */
+.product-range {
+background-color: #f9fafb;
+padding: 40px 20px;
+text-align: center;
+}
+
+.product-range h2 {
+margin-bottom: 20px;
+font-size: 2em;
+color: #333;
+}
+
+.product-range .description {
+margin-bottom: 40px;
+font-size: 1.2em;
+color: #555;
+max-width: 700px; /* Adjust the max-width to keep it from stretching too wide */
+margin-left: auto;
+margin-right: auto;
+text-align: center; /* Center-align the text */
+}
+
+/* Container for products */
+.product-container {
+display: flex;
+flex-wrap: nowrap; /* Ensure products are displayed horizontally */
+gap: 20px;
+justify-content: center;
+overflow-x: auto; /* Allows horizontal scrolling if products exceed container width */
+}
+
+/* Product styling */
+.product {
+width: 300px;
+position: relative;
+transition: transform 0.3s ease-in-out;
+}
+
+.product img {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 0;
+}
+
+/* Specific Styling for Digitalization Development Image */
+.product.digitalization img {
+width: 100%; /* Adjust as needed */
+height: auto; /* Keeps aspect ratio */
+max-height: 300px; /* Ensure it doesn't exceed a certain height */
+}
+
+.product-info {
+margin-top: 10px;
+text-align: center;
+}
+
+.product-info h3 {
+margin: 0;
+font-size: 1.5em;
+color: #333;
+}
+
+.product-info p {
+margin: 5px 0;
+font-size: 1em;
+color: #666;
+}
+
+/* Hover effect */
+.product:hover {
+transform: translateY(-10px);
+}
+
+/* Layout for one row of products */
+.product-container {
+display: flex;
+flex-wrap: nowrap; /* Horizontal layout */
+gap: 20px;
+justify-content: center;
+overflow-x: auto; /* Horizontal scroll if needed */
+}
+
+.product:nth-child(4) {
+margin-top: 0; /* Remove top margin if unnecessary */
+}
+
+@media (max-width: 768px) {
+.product-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.product {
+  width: 100%;
+  margin-bottom: 20px;
+}
+}

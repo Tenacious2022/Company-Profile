@@ -1,0 +1,27 @@
+/* product_detail.css */
+.product-detail {
+    padding: 2rem;
+}
+
+.product-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-detail p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

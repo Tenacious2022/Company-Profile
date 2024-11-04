@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREMIUM COLLECTIONS TOOLS</title>
+    <link rel="stylesheet" href="{% static 'css/premium.css' %}">
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon">
+    <script src="{% static 'js/premium.js' %}" defer></script>
+</head>
+<body>
+    <header>
+        {% include 'navigation_bar.html' %}
+        <div class="header-content">
+            <h1>Premium Collection Tools</h1>
+        </div>
+    </header>
+    <main>
+       
+<!-- Product Range Section -->
+<section class="product-range">
+    <p class="description">
+        Discover our diverse range of cutting-edge solutions designed to meet the evolving needs of your business. Each product is meticulously crafted to deliver outstanding performance, reliability, and innovation. From advanced financial systems to seamless transaction processing, our tools are engineered to empower your operations and drive success. Explore our offerings to find the perfect fit for your organization and take the next step towards digital transformation.
+    </p>
+    <div class="product-container">
+        <div class="product">
+            <img src="{% static 'images/FSPRO.jpeg' %}" alt="FS Pro">
+            <div class="product-info">
+                <h3>FS Pro</h3>
+                <p>Advanced financial solutions for professional use.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/POS.jpeg' %}" alt="POS">
+            <div class="product-info">
+                <h3>POS</h3>
+                <p>Seamless transaction processing systems.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/ERoaster.jpeg' %}" alt="eRoaster">
+            <div class="product-info">
+                <h3>eRoaster</h3>
+                <p>Digitalization tool for efficient data management.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/Digital.jpeg' %}" alt="Digitalization Development">
+            <div class="product-info">
+                <h3>Digitalization Development</h3>
+                <p>Custom solutions for digital transformation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+    </main>
+    {% include 'footer.html' %}
+</body>
+</html>

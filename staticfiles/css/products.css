@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used throughout */
+}
+
+.header-content {
+    background: url('../images/products-bg.jpeg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    padding: 90px 0;
+    font-family: 'Montserrat', sans-serif; /* Apply the same font across all pages */
+}
+
+.header-content h1 {
+    font-size: 3rem; /* Larger size for main heading */
+    font-weight: bold; /* Keep bold for emphasis */
+    margin: 0;
+    padding: 20px;
+}
+
+.header-content h2 {
+    font-size: 2.5rem; /* Medium size for subheadings */
+    font-weight: semi-bold;
+    margin: 10px 0;
+}
+
+.header-content p {
+    font-size: 1.2rem; /* Smaller size for paragraphs */
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Reset and base styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 60;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Product list container */
+.product-list {
+    padding: 4rem 1rem;
+    background-color: #f4f7f6;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section divider with description */
+.section-divider {
+    margin-bottom: 3rem;
+}
+
+.section-divider p {
+    font-size: 1.4rem;
+    color: #555;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* Product grid layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+/* Styling for individual product items */
+.product-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item img {
+    max-width: 100%;
+    width: 100%; /* Ensure image takes the full width */
+    height: 400px; /* Set a fixed height to maintain consistency */
+    object-fit: cover; /* Ensures images are cropped and scaled nicely */
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.product-item:hover {
+    transform: translateY(-10px); /* Move the product on hover */
+}
+
+.product-item h2 {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.product-item p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Link styling for "Learn More" */
+.product-item a {
+    color: #147b75;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.product-item a:hover {
+    color: #1e90ff;
+}

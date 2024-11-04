@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ketelopele Solutions</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon">
+</head>
+<body>
+
+    {% include 'navigation_bar.html' %}
+    
+    <!-- Background Image Section -->
+    <section class="background-section">
+        <div class="animated-background"></div>
+        <div class="hero-text">
+            <h2>Leading the Future of IT Solutions</h2>
+            <p>Providing comprehensive and innovative IT solutions to empower businesses worldwide.</p>
+        </div>
+    </section>
+    <section class="white-background-section">
+        <div class="section-content">
+            <p>Ketelepele is a company incorporated in 2014 as a technology solutions and services company. It is a part of the Motse Technologies Group of Companies. Its scope of clientele stems from the group affiliation as a vendor and a supplier of technology to a wide spectrum of companies and markets.</p>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    {% include 'footer.html' %}
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
+
+
+
+
+

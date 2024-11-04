@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used throughout */
+    background-color: #f5f5f5; /* Fallback background color */
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+}
+/* Tumble animation */
+@keyframes tumble {
+    0% {
+        transform: rotate(0deg) scale(0.5); /* Start small and upright */
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg) scale(1); /* End at full size and complete 360-degree rotation */
+        opacity: 1;
+    }
+}
+
+.logo-image {
+    height: 120px;
+    margin-right: 10px;
+    opacity: 0; /* Initially invisible */
+    animation: tumble 1.5s ease-in-out forwards; /* Apply tumble animation only on page load */
+}
+
+
+/* Modern Dropdown Arrow */
+.nav-links li .dropbtn::after {
+    content: "";
+    border: solid rgb(233, 110, 110);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5px;
+    transform: rotate(45deg); /* Rotates to form an arrow */
+    transition: transform 0.3s ease;
+}
+
+/* Rotate the arrow when hovered */
+.nav-links li:hover .dropbtn::after {
+    transform: rotate(-135deg); /* Rotate upwards */
+}
+/* Navigation Bar Styles */
+nav {
+    display: block; /* Ensure the nav element behaves as a block container */
+}
+
+.nav-links {
+    display: flex; /* Use flexbox to align children horizontally */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.nav-links li {
+    position: relative; /* Allow dropdowns to be positioned absolutely */
+}
+
+.nav-links li a {
+    display: block;
+    padding: 15px 20px; /* Adjust padding for spacing */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+    background: #fff; /* Background color for nav items */
+    transition: background 0.3s; /* Smooth background color change */
+}
+
+.nav-links li a:hover {
+    background: #f0f0f0; /* Background color on hover */
+}
+
+.nav-links a:hover {
+     color: rgb(233, 110, 110);
+}
+
+
+/* Highlight active navigation link */
+.nav-links .active {
+    color: rgb(233, 110, 110); 
+    /* background-color: #f0f0f0;  */
+    font-weight: bold; /* Optional: make active link bold */
+}
+
+
+/* Dropdown styles */
+.dropdown-content {
+    display: none; /* Hide dropdown content by default */
+    position: absolute; /* Position dropdown content absolutely */
+    background-color: #333; /* Background color for dropdown */
+    min-width: 160px; /* Minimum width of dropdown */
+    z-index: 1; /* Ensure dropdown is above other content */
+    top: 100%; /* Position dropdown below the parent li */
+    left: 0; /* Align dropdown with the left edge of the parent li */
+}
+
+.dropdown-content a {
+    color: white; /* Text color for dropdown links */
+    padding: 12px 16px; /* Padding inside dropdown items */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block display for dropdown items */
+}
+
+.dropdown-content a:hover {
+    background-color: #575757; /* Background color on hover for dropdown items */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+
+/* Background section with animation */
+.background-section {
+    font-size: 1.4rem;
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+    overflow: hidden;
+    margin-top: 20px; /* Margin to separate from the header */
+}
+
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: changeBackground 20s infinite; /* Infinite loop animation */
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Animation for changing background images */
+@keyframes changeBackground {
+    0% {
+        background-image: url("../images/B1.jpeg");
+    }
+    33% {
+        background-image: url("../images/B2.jpeg");
+    }
+    66% {
+        background-image: url("../images/B-3.jpeg");
+    }
+    100% {
+        background-image: url("../images/B-4.jpeg");
+    }
+}
+
+/* Hero text styles */
+.hero-text {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+}
+/* White Background Section Styles */
+.white-background-section {
+    background-color: #ffffff; /* White background */
+    padding: 100px; /* Adjust padding as needed */
+    text-align: center; /* Center content */
+    margin-bottom: 100px; /* Space between this section and the footer */
+    max-height: 500px; /* Limit the maximum height of the section */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+}
+
+/* Content Styling */
+.white-background-section .section-content {
+    max-width: 800px; /* Limit width of content */
+    margin: 0 auto; /* Center content horizontally */
+}
+
+.white-background-section p {
+    font-size: 1.3em; /* Adjust font size */
+    color: #333; /* Dark text color for contrast */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+
+/* Footer styles */
+footer {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/Fs1.jpeg');
+    background-size: cover;
+    color: white;
+    padding: 30px 0; /* Adjust padding as needed */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px; /* Padding for spacing inside the footer content */
+    flex-wrap: wrap; /* Wrap columns if necessary */
+}
+
+.footer-column {
+    flex: 1 1 200px; /* Default width for columns */
+    margin-right: 40px;
+    box-sizing: border-box;
+}
+
+.about-us {
+    flex: 2 1 400px; /* Larger space for About Us */
+}
+
+.social-media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.quick-links, .follow-us, .contact-us {
+    flex: 1 1 200px; /* Default space for other columns */
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.social-media img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+/* Adjust footer column layout for smaller screens */
+@media (max-width: 768px) {
+    .footer-column {
+        flex: 1 1 calc(50% - 20px); /* Two columns per row for medium screens */
+        margin-right: 0; /* Remove right margin on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-column {
+        flex: 1 1 100%; /* One column per row for small screens */
+        margin-bottom: 20px; /* Add margin bottom for spacing */
+    }
+}
+
+/* Footer bottom styles */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 14px;
+    margin-top: auto; /* Pushes the copyright notice to the bottom */
+ 
+}

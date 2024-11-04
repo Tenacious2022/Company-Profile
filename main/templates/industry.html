@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %} <!-- Load static template tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries Served</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/industry.css' %}">
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        {% include 'navigation_bar.html' %}
+
+        <div class="header-content">
+            <h1>INDUSTRIES SERVED</h1>
+        </div>
+    </header>
+    
+    <section class="return-industries-served-section">
+        <div class="description">
+            <p>At Ketelopele Solutions, we proudly serve a diverse range of industries, providing tailored IT solutions that meet their unique challenges and requirements. Our expertise spans sectors such as insurance, municipalities, public Wi-Fi projects, education, retail, engineering, and manufacturing. Explore the industries we serve and discover how we can assist in driving innovation and efficiency in your business.</p>
+        </div>
+    </section>
+    <div class="container mt-5">
+        <!-- Orange clickable cards -->
+        <div class="orange-card-container">
+            <div>
+                <div class="orange-card" onclick="showCard(0)">Insurance</div>
+            </div>
+            <div>
+                <div class="orange-card" onclick="showCard(1)">Municipalities</div>
+            </div>
+            <div>
+                <div class="orange-card" onclick="showCard(2)">Community Based Projects (Public Wi-Fi)</div>
+            </div>
+            <div>
+                <div class="orange-card" onclick="showCard(3)">Education</div>
+            </div>
+            <div>
+                <div class="orange-card" onclick="showCard(4)">Retail</div>
+            </div>
+            <div>
+                <div class="orange-card" onclick="showCard(5)">Engineering</div>
+            </div>
+            <div>
+                <div class="orange-card" onclick="showCard(6)">Manufacturing</div>
+            </div>
+        </div>
+    
+        <!-- Carousel for white cards -->
+        <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div>
+                    <div class="carousel-item active">
+                        <div class="white-card">
+                            <h5>Insurance</h5>
+                            <img src="{% static 'images/Finance.jpg' %}" class="d-block" alt="Finance">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="white-card">
+                            <h5>Municipalities</h5>
+                            <img src="{% static 'images/Municipalities.jpg' %}" class="d-block" alt="Municipalities">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="white-card">
+                            <h5>Community Based Projects (Public Wi-Fi)</h5>
+                            <img src="{% static 'images/CBPs.jpg' %}" alt="Community Based Projects">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="white-card">
+                            <h5>Education</h5>
+                            <img src="{% static 'images/Education.jpg' %}" class="d-block" alt="Education">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="white-card">
+                            <h5>Retail</h5>
+                            <img src="{% static 'images/Retail.jpg' %}" class="d-block" alt="Retail">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="white-card">
+                            <h5>Engineering</h5>
+                            <img src="{% static 'images/Engineering.jpg' %}" class="d-block" alt="Engineering">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="white-card">
+                            <h5>Manufacturing</h5>
+                            <img src="{% static 'images/Manufacturing.jpg' %}" class="d-block" alt="Manufacturing">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <section id="certifications" class="certifications-section">
+        <div class="section-content">
+            <h3 class="section-title">CERTIFICATIONS AND AFFILIATIONS</h3>
+            <p class="section-description">
+               Discover the certifications and affiliations that demonstrate our commitment to excellence in IT services. At Ketelopele Solutions, we hold certifications from leading industry organizations and maintain affiliations with key partners, ensuring that we provide top-tier technology solutions that meet global standards. Our certified experts are here to support you with secure, innovative, and efficient IT strategies tailored to your unique needs.
+            </p>
+        <!-- Ten responsive cards with icons and text -->
+        <div class="container my-5">
+            <div class="row text-center justify-content-center">
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card card-custom shadow-sm">
+                        <div class="card-body">
+                            <img src="{% static 'images/CompTIA.jpeg' %}" class="card-img-top mx-auto d-block mb-3" alt="Icon 4">
+                            <h5 class="card-title">CompTIA</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card card-custom shadow-sm">
+                        <div class="card-body">
+                            <img src="{% static 'images/ESETSecurityPartner.jpeg' %}" class="card-img-top mx-auto d-block mb-3" alt="Icon 5">
+                            <h5 class="card-title">ESET Security Partner</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card card-custom shadow-sm">
+                        <div class="card-body">
+                            <img src="{% static 'images/UniFi.jpeg' %}" class="card-img-top mx-auto d-block mb-3" alt="Icon 6">
+                            <h5 class="card-title">Ubiquity Unifi Patner</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 7 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card card-custom shadow-sm">
+                        <div class="card-body">
+                            <img src="{% static 'images/GoogleCloud.png' %}" class="card-img-top mx-auto d-block mb-3" alt="Icon 7">
+                            <h5 class="card-title">Google Cloud</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 8 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card card-custom shadow-sm">
+                        <div class="card-body">
+                            <img src="{% static 'images/ITIL4.jpeg' %}" class="card-img-top mx-auto d-block mb-3" alt="Icon 8">
+                            <h5 class="card-title">ITIL3,4</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 9 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card card-custom shadow-sm">
+                        <div class="card-body">
+                            <img src="{% static 'images/Prince2.jpeg' %}" class="card-img-top mx-auto d-block mb-3" alt="Icon 9">
+                            <h5 class="card-title">Prince 2</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 10 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card card-custom shadow-sm">
+                        <div class="card-body">
+                            <img src="{% static 'images/3Com&Huawei.jpeg' %}" class="card-img-top mx-auto d-block mb-3" alt="Icon 10">
+                            <h5 class="card-title">3com and Huawei</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    {% include 'footer.html' %}
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Reference JavaScript file using static tag -->
+    <script src="{% static 'js/industry.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        {% include 'navigation_bar.html' %}
+
+        <div class="header-content">
+            <h1>SERVICES</h1>
+        </div>
+    </header>
+
+    <section class="return-services-section">
+        <div class="description">
+            <p>Discover how our comprehensive services can help streamline your business operations and drive success. Our offerings include 24/7 monitoring, network management, cloud solutions, and more, all designed to meet your specific needs.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <img src="https://img.icons8.com/ios-filled/50/support.png" alt="support"/>
+            <h3>24/7 Monitoring and Support</h3>
+            <p>Proactive monitoring of customer systems to detect and resolve issues before they impact business operations.</p>
+            <p>24hr help desk support for quick resolution of technical issues.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://img.icons8.com/external-vectorslab-glyph-vectorslab/53/external-Network-Security-networking-vectorslab-glyph-vectorslab.png" alt="Network Security"/>
+            <h3>Network and Security Management</h3>
+            <p>Design, implementation, and management of secure networks tailored to your business needs.</p>
+            <p>Continuous security updates and monitoring to protect against cyber threats.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://img.icons8.com/ios-filled/50/cloud-development.png" alt="cloud-development"/>
+            <h3>Cloud Solutions</h3>
+            <p>Migration to cloud platforms such as AWS, Azure, or Google Cloud for enhanced scalability and flexibility.</p>
+            <p>Management and optimization of cloud infrastructure to maximize performance and cost-efficiency.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://img.icons8.com/ios-filled/50/data-backup.png" alt="data-backup"/>
+            <h3>Backup and Disaster Recovery</h3>
+            <p>Implementation of robust backup solutions to safeguard your data and ensure business continuity.</p>
+            <p>Disaster recovery planning and testing to minimize downtime in case of unforeseen events.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://img.icons8.com/ios-glyphs/100/commercial-development-management.png" alt="consulting"/>
+            <h3>IT Consulting and SLA Management</h3>
+            <p>Expert advice and strategic planning to optimize IT systems and align technology with business goals.</p>
+            <p>Recommendations on technology investments to improve efficiency and competitiveness.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://img.icons8.com/ios-filled/50/security-checked.png" alt="hardware"/>
+            <h3>Managed Endpoint Services</h3>
+            <p>Assistance in sourcing and purchasing the right hardware for your business needs, including servers, workstations, and peripherals.</p>
+            <p>Patch management and software updates to keep systems secure and up to date.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://img.icons8.com/ios-filled/50/it.png" alt="maintenance"/>
+            <h3>OLA’s and Vendor Management</h3>
+            <p>Regular maintenance and updates to ensure optimal performance and security of IT systems.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://img.icons8.com/?size=100&id=xCjyelnIlED8&format=png&color=000000" alt="combined-services"/>
+            <h3>Data Science, Systems Audit & Web Applications</h3>
+            <p>Leverage advanced data analysis and insights to drive your business decisions, conduct thorough system audits to ensure compliance and efficiency, and develop custom web applications to meet your specific needs.</p>
+            <p>Our comprehensive approach integrates data science, auditing, and web design to provide tailored solutions that enhance performance and user experience.</p>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="why-choose-us-section">
+        <h2>WHY CHOOSE US</h2>
+        <div class="why-choose-us-container">
+            <div class="why-choose-us-item">
+                <img src="{% static 'images/expertise.png' %}" alt="Expertise">
+                <h3>Expertise</h3>
+                <p>Our team comprises certified IT professionals with extensive experience in managing complex IT environments.</p>
+            </div>
+            <div class="why-choose-us-item">
+                <img src="{% static 'images/reliability.png' %}" alt="Reliability">
+                <h3>Reliability</h3>
+                <p>We offer proactive monitoring and support to minimize downtime and ensure reliable IT operations.</p>
+            </div>
+            <div class="why-choose-us-item">
+                <img src="{% static 'images/shield.png' %}" alt="Security">
+                <h3>Security</h3>
+                <p>Robust cybersecurity measures to protect your data and systems from evolving cyber threats.</p>
+            </div>
+            <div class="why-choose-us-item">
+                <img src="{% static 'images/growth.png' %}" alt="Scalability">
+                <h3>Scalability</h3>
+                <p>Flexible services that scale with your business growth and evolving technology needs.</p>
+            </div>
+            <div class="why-choose-us-item">
+                <img src="{% static 'images/CEs.png' %}" alt="Cost Efficiency">
+                <h3>Cost Efficiency</h3>
+                <p>Cost-effective solutions tailored to maximize your IT investments and reduce overall expenses.</p>
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

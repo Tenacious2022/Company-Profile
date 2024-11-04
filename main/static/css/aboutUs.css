@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+/* General body styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Header section styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Reduced padding */
+    background-color: #f8f8f8; /* Example background color */
+}
+
+/* Content section styling */
+.content-section {
+    padding: 40px 20px; /* Adjusted padding for responsiveness */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #575656;
+}
+
+.content-section p {
+    text-align: justify;
+    margin-bottom: 20px; /* Added margin for spacing between paragraphs */
+}
+
+/* Logo breathe animation */
+@keyframes breathe {
+    0% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.05); /* Slightly larger */
+    }
+    100% {
+        transform: scale(1); /* Back to normal size */
+    }
+}
+
+.logo-image {
+    height: 120px;
+    margin-right: 10px;
+    animation: breathe 3s ease-in-out infinite; /* Apply the breathe animation */
+    transition: transform 0.3s ease-in-out; /* Smooth animation for hover */
+}
+
+/* On hover, still allow for manual interaction, like zooming */
+.logo-image:hover {
+    transform: scale(1.1); /* Zoom on hover */
+}
+
+/* Image styling */
+.team {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+/* Header Styles */
+.header-content {
+    background: url('../images/About1.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    padding: 70px 0;
+}
+.header-content {
+    padding: 100px 20px; /* Space for header content */
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+.header-content p {
+    font-size: 1.5em;
+}
+
+
+
+/* Hero text styles */
+.hero-text {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+    font-weight: 800;
+}
+
+/* Navigation styling */
+nav {
+    margin: 0;
+    padding: 0;
+}
+

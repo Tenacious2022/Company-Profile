@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used throughout */
+}
+
+/* Header Styles */
+.header-content {
+    background: url('../images/services-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    padding: 120px 0;
+}
+
+.header-content {
+    padding: 100px 20px; /* Space for header content */
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 3em;
+    
+}
+
+.header-content p {
+    font-size: 1.5em;
+}
+
+/* Return Our Services Section Styles */
+.return-services-section {
+    padding: 90px;
+    background-color: white;
+    color: rgb(46, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+}
+
+.return-services-section .description {
+    max-width: 600px;
+    margin: 0 auto; /* Center the description */
+    text-align: center; /* Center-align the text */
+    font-size: 1.2rem; /* Match the font size to the Products page */
+    line-height: 1.6; /* Ensure readability */
+    color: black; /* Match the color to the Products page */
+    margin: 0 auto; /* Center the paragraph if needed */
+    max-width: 800px; /* Limit the width for better readability */
+    padding: 1rem; /* Add padding if needed */
+}
+
+.return-services-section h2 {
+    margin: 0;
+    padding-left: 0;
+}
+
+.return-services-section p {
+    margin-top: 10px;
+}
+
+/* Services Section Styles */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 70px;
+    background: linear-gradient(to right, #abc2ec, #cfdef3); /* Modern gradient background */
+}
+
+.service-item {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row on larger screens */
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Service Item Styles */
+.service-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.0em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.service-item p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        flex: 1 1 100%; /* 1 item per row for small screens */
+    }
+}
+
+
+/* Why Choose Us Section Styles */
+.why-choose-us-section {
+    padding: 100px;
+    background-color: white; /* Dark pink background */
+    color: #555;
+    text-align: center;
+
+}
+
+.why-choose-us-section h2 {
+    font-size: 1.7rem;
+    margin-bottom: 60px;
+    
+}
+
+.why-choose-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.why-choose-us-item {
+    width: calc(33.333% - 20px); /* Three items per row */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    color: #555;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-choose-us-item img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.why-choose-us-item h3 {
+    margin: 10px 0;
+}
+
+.why-choose-us-item p {
+    margin: 0;
+}
+
+.why-choose-us-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .why-choose-us-item {
+        width: calc(50% - 20px); /* Two items per row for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .why-choose-us-item {
+        width: 100%; /* One item per row for small screens */
+    }
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/Fs1.jpeg');
+    background-size: cover;
+    color: white;
+    padding: 60px 0; /* Adjust padding as needed */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px; /* Padding for spacing inside the footer content */
+    flex-wrap: wrap; /* Wrap columns if necessary */
+}
+
+.footer-column {
+    flex: 1 1 200px; /* Default width for columns */
+    margin-right: 40px;
+    box-sizing: border-box;
+}
+
+.about-us {
+    flex: 2 1 400px; /* Larger space for About Us */
+}
+
+.quick-links, .follow-us, .contact-us {
+    flex: 1 1 200px; /* Default space for other columns */
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.social-media img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+/* Adjust footer column layout for smaller screens */
+@media (max-width: 768px) {
+    .footer-column {
+        flex: 1 1 calc(50% - 20px); /* Two columns per row for medium screens */
+        margin-right: 0; /* Remove right margin on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-column {
+        flex: 1 1 100%; /* One column per row for small screens */
+        margin-bottom: 20px; /* Add margin bottom for spacing */
+    }
+}
+
+/* Footer bottom styles */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 14px;
+    margin-top: auto; /* Pushes the copyright notice to the bottom */
+}

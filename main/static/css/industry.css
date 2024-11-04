@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is used throughout */
+}
+
+/* Industry Served Section */
+.header-content {
+    background: url('../images/Industries.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    padding: 90px 0;
+}
+
+.header-content {
+    padding: 100px 20px; /* Space for header content */
+}
+
+.header-content h1 {
+    font-size: 3em; /* Increases the font size */
+    font-weight: bold; /* Makes the text bold */
+}
+
+
+.return-industries-served-section .description {
+    max-width: 600px;
+    margin: 0 auto; /* Center the description */
+    text-align: center; /* Center-align the text */
+    font-size: 1.2rem; /* Match the font size to the Products page */
+    line-height: 1.6; /* Ensure readability */
+    color: #555; /* Match the color to the Products page */
+    margin: 0 auto; /* Center the paragraph if needed */
+    max-width: 800px; /* Limit the width for better readability */
+    padding: 3rem; /* Add padding if needed */
+}
+.orange-card {
+    background-color: #C07370; /* Darker pinkish color */
+    color: white; /* Text color changed to white */
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.orange-card:hover {
+    background-color: #E7b7ad; /* Light pinkish color */
+}
+
+.orange-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between cards */
+}
+
+.orange-card-container > div {
+    flex: 1 1 calc(33.333% - 15px); /* Adjust for 3 cards on the first line */
+}
+
+.orange-card-container > div:nth-child(n+4) {
+    flex: 1 1 calc(25% - 15px); /* Adjust for 4 cards on the second line */
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item {
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #147b75; /* Teal color */
+    border-radius: 50%;
+}
+
+.white-card {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Very light cream color */
+}
+
+.white-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.container mt-5 {
+    padding-bottom: 20px;
+}
+
+.certifications-section{
+    color: #555;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    margin-top: 50px; /* Adds space between Industry Certification and Certification and Affiliations */
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 19px;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Base card styles */
+.card-custom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.card-custom:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}
+
+/* Ensure image responsiveness */
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+footer h3 {
+    font-size: 1rem; /* Adjust as needed */
+}
